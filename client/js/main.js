@@ -53,7 +53,7 @@ function info(data) {
     <div class="card-content">
       <div class="row">
         <div class="col s6">
-          <h2>${data.name}</h2>
+          <h3>${data.name}</h3>
         </div>
         <div class="col s6">
           <img class="responsive-img" src="${data.flag}" alt="${data.name.toLowerCase()}-flag">
@@ -70,6 +70,10 @@ function info(data) {
                 <tr>
                   <td><strong>Other Name</strong></td>
                   <td>${data.altSpellings.join(', ')}</td>
+                </tr>
+                <tr>
+                  <td><strong>Capital</strong></td>
+                  <td>${data.capital}</td>
                 </tr>
                 <tr>
                   <td><strong>Region </strong></td>
@@ -109,7 +113,7 @@ function info(data) {
           <i class="material-icons">add_box</i>Additional Info
         </div>
         <div class="collapsible-body">
-
+        
         </div>
         </li>
 
