@@ -2,11 +2,7 @@ const baseUrl = 'http://localhost:3000/api'
 let countryList = {}
 
 $(document).ready(function() {
-  fetchCountryList()
-  $('input.autocomplete').autocomplete({ 
-    data: countryList,
-    onAutocomplete: fetchDetailCountry
-  })
+  
 
   $('#autocomplete-input').keypress(function(event) {
     let keycode = (event.keycode ? event.keycode : event.which)
@@ -62,4 +58,8 @@ function fetchHolidays(countryAlphaCode) {
     $(`#country_calendar_${countryAlphaCode.toLowerCase()}`).html(calendar)
 
   })
+}
+
+function generateMainContent() {
+  $(`#content`).html(loginContent)
 }
