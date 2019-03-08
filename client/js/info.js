@@ -1,14 +1,14 @@
 function info(data) {
   return `
   <!-- data from server here -->
-  <div class="card">
+  <div class="card grey lighten-4">
     <div class="card-content">
       <div class="row">
         <div class="col s6">
           <h3>${data.name}</h3>
         </div>
         <div class="col s6">
-          <img class="responsive-img flag" src="${data.flag}" alt="${data.name.toLowerCase()}-flag">
+          <img class="responsive-img z-depth-2" src="${data.flag}" alt="${data.name.toLowerCase()}-flag">
         </div>
       </div>
       <ul class="collapsible">
