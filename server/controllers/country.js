@@ -10,7 +10,7 @@ class CountriesController {
   }
 
   static listByName({ params }, res, next) {
-    countries.get(`name/${params.name}`)
+    countries.get(`name/${params.name}?fullText=true`)
       .then(({ data }) => {
         res.status(200).json(data)
       })

@@ -1,3 +1,4 @@
 module.exports = {
-  CountriesController: require('./country')
+  CountriesController: require('./country'),
+  EventsController: require('./event')
 };
